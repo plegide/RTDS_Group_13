@@ -168,10 +168,10 @@ def main():
     run1.to_csv(final / "run1_summary.csv", index=False)
 
     # Figures
-    hit_rate_chart(summary, figs / "fig_hit_rate.pdf")
+    hit_rate_chart(summary, figs / "fig_hit_rate.png")
     fixed = summary[summary["settings"] == "fixed"]
     s = fixed[(fixed["model"] == "lstm") & (fixed["scenario"] == "A")].reset_index(drop=True)
-    per_visit_panels(s, figs / "fig_per_visit_lstm_A.pdf", cfg["scenarios"]["A"])
+    per_visit_panels(s, figs / "fig_per_visit_lstm_A.png", cfg["scenarios"]["A"])
 
     # Report text
     pct = int(a["ci_level"] * 100)

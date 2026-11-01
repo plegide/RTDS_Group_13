@@ -20,14 +20,15 @@ plt.rcParams.update({
     "axes.edgecolor": GRID, "axes.labelcolor": TEXT_2, "xtick.color": TEXT_2, "ytick.color": TEXT_2,
     "text.color": TEXT, "axes.grid": True, "grid.color": GRID, "grid.linewidth": 0.8,
     "axes.spines.top": False, "axes.spines.right": False, "font.size": 11,
-    "pdf.fonttype": 42,
 })
-WHITE = {"figure.facecolor": "white", "axes.facecolor": "white", "savefig.facecolor": "white"}
+REPORT_STYLE = {"figure.facecolor": "white", "axes.facecolor": "white", "savefig.facecolor": "white",
+                "font.size": 8, "axes.titlesize": 8, "axes.labelcolor": TEXT, "xtick.color": TEXT,
+                "ytick.color": TEXT, "axes.edgecolor": "#b0afab"}
 
 
 def hit_rate_chart(summary, path):
     """Hit rate per rho, one panel per scenario: solid = fixed, dashed = tuned, band = bootstrap interval."""
-    with plt.rc_context({**WHITE, "font.size": 8}):
+    with plt.rc_context(REPORT_STYLE):
         fig, axes = plt.subplots(1, 2, figsize=(3.5, 2.4), sharey=True)
         for ax, scen, title in zip(axes, ("A", "B"), ("A: driver = last visit", "B: driver = first visit")):
             for model in ("forest", "lstm"):
@@ -42,22 +43,22 @@ def hit_rate_chart(summary, path):
             ax.axhline(1 / 3, color=TEXT_2, linestyle=":", linewidth=1)
             ax.text(0.02, 1 / 3 + 0.015, "chance", color=TEXT_2)
             ax.set_xticks(RHOS, [f"{r:g}" for r in RHOS])
-            ax.set_xlabel("correlation ρ", labelpad=1)
+            ax.set_xlabel(r"correlation $\rho$", labelpad=1)
             ax.set_xlim(-0.05, 0.95)
             ax.set_ylim(0.2, 1.0)
             ax.set_title(title, loc="left", color=TEXT)
             ax.grid(axis="x", visible=False)
         axes[0].set_ylabel("Hit rate")
-        fig.legend(*axes[0].get_legend_handles_labels(), loc="upper center", ncol=2, frameon=False,
-                   handletextpad=0.4, columnspacing=1.0, handlelength=2.2)
-        fig.tight_layout(rect=(0, 0, 1, 0.82))
-        fig.savefig(path)
+        fig.legend(*axes[0].get_legend_handles_labels(), loc="upper center", ncol=4, frameon=False,
+                   fontsize=7, handletextpad=0.3, columnspacing=0.7, handlelength=1.8)
+        fig.tight_layout(rect=(0, 0, 1, 0.92))
+        fig.savefig(path, dpi=300)
         plt.close(fig)
 
 
 def per_visit_panels(summary, path, driver_visit):
     """Per visit: share of SurvSHAP(t) credit (Run 3), then the two reliance measures (Run 2)."""
-    with plt.rc_context({**WHITE, "font.size": 8}):
+    with plt.rc_context(REPORT_STYLE):
         fig, axes = plt.subplots(1, 3, figsize=(7.16, 2.0))
         width = 0.26
         panels = [("share_visit_{k}", "Credit share", "Mean credit share"),
@@ -72,14 +73,14 @@ def per_visit_panels(summary, path, driver_visit):
                        label=f"visit {k}" + (" (driver)" if k == driver_visit else ""), zorder=2)
                 ax.errorbar(xs, mean, yerr=[mean - summary[f"{col}_lo"], summary[f"{col}_hi"] - mean],
                             fmt="none", ecolor=TEXT, elinewidth=1, capsize=2.5, zorder=3)
-            ax.set_xticks(range(len(summary)), [f"ρ = {r:g}" for r in summary["rho"]])
+            ax.set_xticks(range(len(summary)), [rf"$\rho$ = {r:g}" for r in summary["rho"]])
             ax.set_ylabel(ylabel)
             ax.set_title(title, loc="left", color=TEXT)
             ax.axhline(0, color=TEXT_2, linewidth=0.8)
             ax.grid(axis="x", visible=False)
         fig.legend(*axes[0].get_legend_handles_labels(), loc="upper center", ncol=3, frameon=False)
         fig.tight_layout(rect=(0, 0, 1, 0.88))
-        fig.savefig(path)
+        fig.savefig(path, dpi=300)
         plt.close(fig)
 
 

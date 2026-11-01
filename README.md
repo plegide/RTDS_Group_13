@@ -52,6 +52,6 @@ Step 8 needs only the saved tables in `results/` (it refits the four example mod
 - `results/final/summary.csv`: hit rate, credit share, per-visit credit, both reliance measures and C-indexes, with 95% bootstrap intervals over datasets.
 - `results/final/tests.csv` and `tests_tuned.csv`: the 36 paired Wilcoxon tests for fixed and for tuned hyperparameters.
 - `results/final/seed_checks.csv`, `train_test_check.csv`, `run1_summary.csv`, `examples.csv`.
-- `results/final/figures/`: `fig_hit_rate.pdf`, `fig_per_visit_lstm_A.pdf` and `fig_examples.png`.
+- `results/final/figures/`: `fig_hit_rate.png`, `fig_per_visit_lstm_A.png` and `fig_examples.png`.
 
 Results are per explained patient (Table 1 files, `table1_*.csv`) and per visit and dataset (Table 2 files, `table2_*.csv`), in `results/scenario_<A|B>/` for the fixed RSF and in a subfolder per model version otherwise (`lstm/`, `forest_tuned/`, `lstm_tuned/`).
