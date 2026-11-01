@@ -1,0 +1,4 @@
+rho,rows_matched,max_relative_credit_diff,hits_identical,max_share_diff,c_index_identical
+0.0,500,9.286663103428016e-08,True,1.580754669383566e-07,True
+0.5,500,9.526509656689259e-08,True,1.6108411859949712e-07,True
+0.9,500,0.0008572681979586596,True,0.0005615873223838719,True
