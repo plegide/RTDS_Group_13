@@ -1,0 +1,9 @@
+Stage 6f, forest: 54 candidates scored in 6.9 min (tuning datasets 1000-1002; score = held-out integrated Brier score)
+Fixed setting: {"max_features": 3, "min_samples_leaf": 15}
+
+scenario A, rho = 0: chosen {"max_features": 2, "min_samples_leaf": 50}
+  Brier 0.18290 (fixed 0.18556), C-index 0.6575 (fixed 0.6532), same as fixed: False
+scenario A, rho = 0.5: chosen {"max_features": 2, "min_samples_leaf": 50}
+  Brier 0.18285 (fixed 0.18456), C-index 0.6563 (fixed 0.6547), same as fixed: False
+scenario A, rho = 0.9: chosen {"max_features": 2, "min_samples_leaf": 50}
+  Brier 0.18232 (fixed 0.18601), C-index 0.6593 (fixed 0.6533), same as fixed: False

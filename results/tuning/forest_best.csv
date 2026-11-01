@@ -1,0 +1,4 @@
+model,scenario,rho,settings,ibs,c_index,best_epoch,fixed_ibs,fixed_c_index,fixed_best_epoch,same_as_fixed
+forest,A,0.0,"{""max_features"": 2, ""min_samples_leaf"": 50}",0.18290313254390264,0.6575201845725317,,0.18556399224142583,0.6532491611125233,,False
+forest,A,0.5,"{""max_features"": 2, ""min_samples_leaf"": 50}",0.18285287454113344,0.6562873271869989,,0.18455668160093788,0.6547173858984302,,False
+forest,A,0.9,"{""max_features"": 2, ""min_samples_leaf"": 50}",0.18231555347597558,0.6593264482042908,,0.18601079296290488,0.6533408638604961,,False
