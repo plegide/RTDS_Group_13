@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+results/**/*.tmp
+# No PDFs except the report's figures.
+*.pdf
+!results/final/figures/*.pdf
