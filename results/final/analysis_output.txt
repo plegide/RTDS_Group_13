@@ -1,0 +1,274 @@
+Final analysis. Means over datasets with 95% bootstrap intervals (10000 resamples of datasets).
+Forest scenario B = forest scenario A relabelled (mirror shown in Stages B4 and B5).
+
+forest (fixed settings), scenario A (driver visit_3), rho = 0: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.906 [0.888, 0.923]   credit share 0.718 [0.706, 0.729]
+  share per visit: 1 = 0.143 [0.136, 0.151], 2 = 0.139 [0.131, 0.147], 3 = 0.718 [0.706, 0.729]
+  Run 2 drop: 1 = 0.0006 [-0.0002, 0.0015], 2 = 0.0004 [-0.0005, 0.0013], 3 = 0.1690 [0.1643, 0.1738]
+  Run 2 Brier increase: 1 = 0.0002 [-0.0002, 0.0005], 2 = 0.0003 [-0.0001, 0.0007], 3 = 0.0694 [0.0670, 0.0719]
+  C-index model 0.6689 [0.6646, 0.6731], true risk 0.6788 [0.6745, 0.6835]
+
+forest (fixed settings), scenario A (driver visit_3), rho = 0.5: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.900 [0.883, 0.916]   credit share 0.715 [0.703, 0.726]
+  share per visit: 1 = 0.147 [0.140, 0.155], 2 = 0.139 [0.130, 0.148], 3 = 0.715 [0.703, 0.726]
+  Run 2 drop: 1 = 0.0014 [0.0002, 0.0027], 2 = 0.0003 [-0.0008, 0.0013], 3 = 0.1682 [0.1631, 0.1736]
+  Run 2 Brier increase: 1 = 0.0004 [-0.0001, 0.0009], 2 = 0.0001 [-0.0003, 0.0006], 3 = 0.0685 [0.0656, 0.0715]
+  C-index model 0.6691 [0.6646, 0.6735], true risk 0.6788 [0.6745, 0.6833]
+
+forest (fixed settings), scenario A (driver visit_3), rho = 0.9: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.876 [0.848, 0.900]   credit share 0.672 [0.653, 0.689]
+  share per visit: 1 = 0.167 [0.158, 0.177], 2 = 0.161 [0.147, 0.177], 3 = 0.672 [0.653, 0.689]
+  Run 2 drop: 1 = 0.0015 [-0.0001, 0.0032], 2 = 0.0009 [-0.0007, 0.0025], 3 = 0.1543 [0.1466, 0.1618]
+  Run 2 Brier increase: 1 = 0.0003 [-0.0004, 0.0010], 2 = 0.0003 [-0.0004, 0.0010], 3 = 0.0585 [0.0541, 0.0628]
+  C-index model 0.6680 [0.6635, 0.6727], true risk 0.6788 [0.6744, 0.6833]
+
+forest (fixed settings), scenario B (driver visit_1), rho = 0: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.906 [0.888, 0.923]   credit share 0.718 [0.706, 0.729]
+  share per visit: 1 = 0.718 [0.707, 0.729], 2 = 0.143 [0.135, 0.151], 3 = 0.139 [0.131, 0.148]
+  Run 2 drop: 1 = 0.1690 [0.1644, 0.1738], 2 = 0.0006 [-0.0002, 0.0015], 3 = 0.0004 [-0.0005, 0.0013]
+  Run 2 Brier increase: 1 = 0.0694 [0.0671, 0.0719], 2 = 0.0002 [-0.0002, 0.0005], 3 = 0.0003 [-0.0001, 0.0006]
+  C-index model 0.6689 [0.6647, 0.6732], true risk 0.6788 [0.6744, 0.6832]
+
+forest (fixed settings), scenario B (driver visit_1), rho = 0.5: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.900 [0.883, 0.915]   credit share 0.715 [0.703, 0.726]
+  share per visit: 1 = 0.715 [0.703, 0.726], 2 = 0.147 [0.139, 0.154], 3 = 0.139 [0.130, 0.148]
+  Run 2 drop: 1 = 0.1682 [0.1630, 0.1734], 2 = 0.0014 [0.0002, 0.0027], 3 = 0.0003 [-0.0008, 0.0014]
+  Run 2 Brier increase: 1 = 0.0685 [0.0655, 0.0714], 2 = 0.0004 [-0.0001, 0.0009], 3 = 0.0001 [-0.0003, 0.0006]
+  C-index model 0.6691 [0.6647, 0.6735], true risk 0.6788 [0.6745, 0.6833]
+
+forest (fixed settings), scenario B (driver visit_1), rho = 0.9: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.876 [0.848, 0.900]   credit share 0.672 [0.653, 0.689]
+  share per visit: 1 = 0.672 [0.653, 0.689], 2 = 0.167 [0.157, 0.177], 3 = 0.161 [0.147, 0.176]
+  Run 2 drop: 1 = 0.1543 [0.1466, 0.1618], 2 = 0.0015 [-0.0001, 0.0032], 3 = 0.0009 [-0.0007, 0.0025]
+  Run 2 Brier increase: 1 = 0.0585 [0.0541, 0.0628], 2 = 0.0003 [-0.0004, 0.0009], 3 = 0.0003 [-0.0004, 0.0010]
+  C-index model 0.6680 [0.6634, 0.6727], true risk 0.6788 [0.6746, 0.6834]
+
+lstm (fixed settings), scenario A (driver visit_3), rho = 0: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.938 [0.915, 0.956]   credit share 0.801 [0.777, 0.823]
+  share per visit: 1 = 0.070 [0.059, 0.083], 2 = 0.128 [0.113, 0.144], 3 = 0.801 [0.777, 0.823]
+  Run 2 drop: 1 = 0.0004 [-0.0002, 0.0013], 2 = -0.0003 [-0.0012, 0.0006], 3 = 0.1762 [0.1708, 0.1815]
+  Run 2 Brier increase: 1 = 0.0000 [-0.0001, 0.0002], 2 = -0.0001 [-0.0003, 0.0001], 3 = 0.0602 [0.0567, 0.0633]
+  C-index model 0.6754 [0.6703, 0.6801], true risk 0.6788 [0.6744, 0.6833]
+
+lstm (fixed settings), scenario A (driver visit_3), rho = 0.5: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.919 [0.882, 0.946]   credit share 0.770 [0.736, 0.798]
+  share per visit: 1 = 0.089 [0.073, 0.108], 2 = 0.141 [0.125, 0.158], 3 = 0.770 [0.736, 0.799]
+  Run 2 drop: 1 = 0.0004 [-0.0007, 0.0021], 2 = 0.0007 [-0.0001, 0.0015], 3 = 0.1564 [0.1488, 0.1631]
+  Run 2 Brier increase: 1 = 0.0002 [0.0000, 0.0005], 2 = 0.0006 [0.0003, 0.0009], 3 = 0.0525 [0.0489, 0.0559]
+  C-index model 0.6752 [0.6705, 0.6797], true risk 0.6788 [0.6744, 0.6833]
+
+lstm (fixed settings), scenario A (driver visit_3), rho = 0.9: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.336 [0.251, 0.421]   credit share 0.323 [0.291, 0.359]
+  share per visit: 1 = 0.375 [0.342, 0.408], 2 = 0.302 [0.295, 0.307], 3 = 0.323 [0.290, 0.358]
+  Run 2 drop: 1 = 0.0317 [0.0253, 0.0383], 2 = 0.0142 [0.0130, 0.0155], 3 = 0.0311 [0.0250, 0.0378]
+  Run 2 Brier increase: 1 = 0.0088 [0.0073, 0.0102], 2 = 0.0061 [0.0056, 0.0065], 3 = 0.0104 [0.0086, 0.0123]
+  C-index model 0.6714 [0.6669, 0.6760], true risk 0.6788 [0.6744, 0.6833]
+
+lstm (fixed settings), scenario B (driver visit_1), rho = 0: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.853 [0.836, 0.869]   credit share 0.691 [0.677, 0.706]
+  share per visit: 1 = 0.691 [0.676, 0.706], 2 = 0.214 [0.197, 0.231], 3 = 0.095 [0.085, 0.106]
+  Run 2 drop: 1 = 0.1699 [0.1643, 0.1754], 2 = -0.0007 [-0.0021, 0.0008], 3 = -0.0005 [-0.0013, 0.0002]
+  Run 2 Brier increase: 1 = 0.0505 [0.0461, 0.0550], 2 = 0.0001 [-0.0003, 0.0005], 3 = -0.0002 [-0.0005, -0.0000]
+  C-index model 0.6691 [0.6644, 0.6739], true risk 0.6788 [0.6745, 0.6834]
+
+lstm (fixed settings), scenario B (driver visit_1), rho = 0.5: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.777 [0.755, 0.799]   credit share 0.595 [0.574, 0.618]
+  share per visit: 1 = 0.595 [0.573, 0.618], 2 = 0.273 [0.259, 0.285], 3 = 0.132 [0.118, 0.146]
+  Run 2 drop: 1 = 0.1261 [0.1198, 0.1324], 2 = 0.0038 [0.0020, 0.0057], 3 = 0.0005 [-0.0004, 0.0014]
+  Run 2 Brier increase: 1 = 0.0323 [0.0285, 0.0364], 2 = 0.0027 [0.0022, 0.0032], 3 = 0.0008 [0.0005, 0.0011]
+  C-index model 0.6680 [0.6634, 0.6728], true risk 0.6788 [0.6744, 0.6832]
+
+lstm (fixed settings), scenario B (driver visit_1), rho = 0.9: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.769 [0.749, 0.789]   credit share 0.483 [0.472, 0.493]
+  share per visit: 1 = 0.483 [0.472, 0.493], 2 = 0.306 [0.302, 0.311], 3 = 0.211 [0.202, 0.219]
+  Run 2 drop: 1 = 0.0640 [0.0599, 0.0683], 2 = 0.0135 [0.0121, 0.0149], 3 = 0.0063 [0.0053, 0.0074]
+  Run 2 Brier increase: 1 = 0.0166 [0.0157, 0.0176], 2 = 0.0065 [0.0060, 0.0070], 3 = 0.0034 [0.0030, 0.0039]
+  C-index model 0.6751 [0.6706, 0.6798], true risk 0.6788 [0.6744, 0.6833]
+
+forest (tuned settings), scenario A (driver visit_3), rho = 0: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.962 [0.951, 0.973]   credit share 0.800 [0.788, 0.812]
+  share per visit: 1 = 0.103 [0.093, 0.114], 2 = 0.097 [0.088, 0.106], 3 = 0.800 [0.788, 0.812]
+  Run 2 drop: 1 = -0.0001 [-0.0008, 0.0005], 2 = -0.0000 [-0.0006, 0.0006], 3 = 0.1747 [0.1699, 0.1796]
+  Run 2 Brier increase: 1 = -0.0001 [-0.0003, 0.0001], 2 = 0.0001 [-0.0001, 0.0002], 3 = 0.0628 [0.0609, 0.0650]
+  C-index model 0.6741 [0.6698, 0.6784], true risk 0.6788 [0.6744, 0.6834]
+
+forest (tuned settings), scenario A (driver visit_3), rho = 0.5: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.950 [0.937, 0.963]   credit share 0.773 [0.758, 0.787]
+  share per visit: 1 = 0.119 [0.107, 0.133], 2 = 0.107 [0.098, 0.117], 3 = 0.773 [0.758, 0.787]
+  Run 2 drop: 1 = 0.0010 [0.0002, 0.0020], 2 = 0.0009 [0.0001, 0.0017], 3 = 0.1607 [0.1557, 0.1662]
+  Run 2 Brier increase: 1 = 0.0004 [0.0002, 0.0007], 2 = 0.0004 [0.0002, 0.0007], 3 = 0.0555 [0.0532, 0.0579]
+  C-index model 0.6745 [0.6699, 0.6791], true risk 0.6788 [0.6746, 0.6833]
+
+forest (tuned settings), scenario A (driver visit_3), rho = 0.9: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.888 [0.860, 0.914]   credit share 0.649 [0.628, 0.669]
+  share per visit: 1 = 0.179 [0.159, 0.201], 2 = 0.171 [0.152, 0.192], 3 = 0.649 [0.628, 0.669]
+  Run 2 drop: 1 = 0.0053 [0.0037, 0.0070], 2 = 0.0056 [0.0041, 0.0071], 3 = 0.1146 [0.1081, 0.1210]
+  Run 2 Brier increase: 1 = 0.0020 [0.0014, 0.0027], 2 = 0.0021 [0.0015, 0.0028], 3 = 0.0363 [0.0338, 0.0388]
+  C-index model 0.6751 [0.6704, 0.6797], true risk 0.6788 [0.6745, 0.6834]
+
+forest (tuned settings), scenario B (driver visit_1), rho = 0: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.962 [0.951, 0.972]   credit share 0.800 [0.788, 0.812]
+  share per visit: 1 = 0.800 [0.789, 0.812], 2 = 0.103 [0.093, 0.114], 3 = 0.097 [0.088, 0.106]
+  Run 2 drop: 1 = 0.1747 [0.1701, 0.1794], 2 = -0.0001 [-0.0008, 0.0006], 3 = -0.0000 [-0.0006, 0.0006]
+  Run 2 Brier increase: 1 = 0.0628 [0.0608, 0.0649], 2 = -0.0001 [-0.0003, 0.0001], 3 = 0.0001 [-0.0001, 0.0002]
+  C-index model 0.6741 [0.6698, 0.6783], true risk 0.6788 [0.6745, 0.6834]
+
+forest (tuned settings), scenario B (driver visit_1), rho = 0.5: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.950 [0.937, 0.963]   credit share 0.773 [0.758, 0.787]
+  share per visit: 1 = 0.773 [0.758, 0.787], 2 = 0.119 [0.107, 0.133], 3 = 0.107 [0.098, 0.117]
+  Run 2 drop: 1 = 0.1607 [0.1557, 0.1662], 2 = 0.0010 [0.0002, 0.0020], 3 = 0.0009 [0.0001, 0.0017]
+  Run 2 Brier increase: 1 = 0.0555 [0.0533, 0.0578], 2 = 0.0004 [0.0002, 0.0007], 3 = 0.0004 [0.0002, 0.0007]
+  C-index model 0.6745 [0.6700, 0.6791], true risk 0.6788 [0.6744, 0.6832]
+
+forest (tuned settings), scenario B (driver visit_1), rho = 0.9: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.888 [0.860, 0.915]   credit share 0.649 [0.628, 0.669]
+  share per visit: 1 = 0.649 [0.628, 0.669], 2 = 0.179 [0.159, 0.201], 3 = 0.171 [0.152, 0.191]
+  Run 2 drop: 1 = 0.1146 [0.1081, 0.1211], 2 = 0.0053 [0.0037, 0.0071], 3 = 0.0056 [0.0041, 0.0071]
+  Run 2 Brier increase: 1 = 0.0363 [0.0338, 0.0389], 2 = 0.0020 [0.0015, 0.0027], 3 = 0.0021 [0.0015, 0.0027]
+  C-index model 0.6751 [0.6705, 0.6798], true risk 0.6788 [0.6745, 0.6832]
+
+lstm (tuned settings), scenario A (driver visit_3), rho = 0: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.961 [0.940, 0.976]   credit share 0.842 [0.818, 0.861]
+  share per visit: 1 = 0.062 [0.053, 0.072], 2 = 0.097 [0.083, 0.111], 3 = 0.842 [0.818, 0.861]
+  Run 2 drop: 1 = 0.0003 [-0.0003, 0.0011], 2 = -0.0005 [-0.0013, 0.0001], 3 = 0.1773 [0.1719, 0.1826]
+  Run 2 Brier increase: 1 = 0.0000 [-0.0001, 0.0001], 2 = -0.0001 [-0.0003, 0.0001], 3 = 0.0593 [0.0556, 0.0628]
+  C-index model 0.6765 [0.6717, 0.6814], true risk 0.6788 [0.6745, 0.6834]
+
+lstm (tuned settings), scenario A (driver visit_3), rho = 0.5: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.944 [0.926, 0.961]   credit share 0.788 [0.764, 0.809]
+  share per visit: 1 = 0.105 [0.089, 0.122], 2 = 0.107 [0.096, 0.119], 3 = 0.788 [0.764, 0.810]
+  Run 2 drop: 1 = -0.0000 [-0.0007, 0.0007], 2 = 0.0003 [-0.0003, 0.0009], 3 = 0.1635 [0.1575, 0.1695]
+  Run 2 Brier increase: 1 = 0.0004 [0.0002, 0.0007], 2 = 0.0005 [0.0002, 0.0007], 3 = 0.0530 [0.0493, 0.0564]
+  C-index model 0.6767 [0.6720, 0.6814], true risk 0.6788 [0.6745, 0.6833]
+
+lstm (tuned settings), scenario A (driver visit_3), rho = 0.9: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.744 [0.713, 0.773]   credit share 0.481 [0.463, 0.498]
+  share per visit: 1 = 0.239 [0.223, 0.256], 2 = 0.280 [0.274, 0.286], 3 = 0.481 [0.462, 0.499]
+  Run 2 drop: 1 = 0.0077 [0.0061, 0.0094], 2 = 0.0117 [0.0103, 0.0132], 3 = 0.0623 [0.0571, 0.0678]
+  Run 2 Brier increase: 1 = 0.0038 [0.0032, 0.0045], 2 = 0.0051 [0.0047, 0.0056], 3 = 0.0191 [0.0175, 0.0206]
+  C-index model 0.6748 [0.6703, 0.6793], true risk 0.6788 [0.6745, 0.6833]
+
+lstm (tuned settings), scenario B (driver visit_1), rho = 0: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.918 [0.901, 0.934]   credit share 0.776 [0.753, 0.798]
+  share per visit: 1 = 0.776 [0.753, 0.798], 2 = 0.138 [0.119, 0.157], 3 = 0.086 [0.073, 0.100]
+  Run 2 drop: 1 = 0.1748 [0.1691, 0.1807], 2 = -0.0001 [-0.0012, 0.0009], 3 = -0.0001 [-0.0007, 0.0004]
+  Run 2 Brier increase: 1 = 0.0601 [0.0567, 0.0636], 2 = 0.0001 [-0.0002, 0.0004], 3 = -0.0001 [-0.0002, 0.0001]
+  C-index model 0.6748 [0.6700, 0.6798], true risk 0.6788 [0.6745, 0.6832]
+
+lstm (tuned settings), scenario B (driver visit_1), rho = 0.5: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.839 [0.821, 0.857]   credit share 0.663 [0.645, 0.681]
+  share per visit: 1 = 0.663 [0.645, 0.681], 2 = 0.248 [0.234, 0.260], 3 = 0.089 [0.077, 0.102]
+  Run 2 drop: 1 = 0.1418 [0.1349, 0.1488], 2 = 0.0028 [0.0013, 0.0043], 3 = 0.0000 [-0.0005, 0.0006]
+  Run 2 Brier increase: 1 = 0.0428 [0.0395, 0.0463], 2 = 0.0020 [0.0015, 0.0025], 3 = 0.0002 [0.0000, 0.0004]
+  C-index model 0.6719 [0.6672, 0.6768], true risk 0.6788 [0.6745, 0.6832]
+
+lstm (tuned settings), scenario B (driver visit_1), rho = 0.9: 50 datasets, 5000 patients, ties = 0, NaN shares = 0
+  hit rate 0.878 [0.869, 0.888]   credit share 0.611 [0.606, 0.616]
+  share per visit: 1 = 0.611 [0.606, 0.616], 2 = 0.287 [0.283, 0.291], 3 = 0.101 [0.099, 0.104]
+  Run 2 drop: 1 = 0.0982 [0.0944, 0.1021], 2 = 0.0116 [0.0105, 0.0127], 3 = 0.0008 [0.0006, 0.0011]
+  Run 2 Brier increase: 1 = 0.0276 [0.0265, 0.0289], 2 = 0.0058 [0.0054, 0.0062], 3 = 0.0010 [0.0009, 0.0012]
+  C-index model 0.6766 [0.6721, 0.6810], true risk 0.6788 [0.6745, 0.6833]
+
+Paired Wilcoxon signed-rank tests, fixed settings, the planned analysis: 36 comparisons (between rho levels: 18, forest vs LSTM: 12, scenario A vs B: 6); p < 0.05 in 32.
+                comparison       metric        rho  n_datasets  mean_first  mean_second  median_diff_second_minus_first  wilcoxon_stat   p_value
+    forest A: rho 0 vs 0.5          hit   0 vs 0.5          50       0.906       0.8998                           -0.01          446.5    0.1448
+    forest A: rho 0 vs 0.5 credit_share   0 vs 0.5          50      0.7177       0.7145                      -0.0006927            535    0.3278
+    forest A: rho 0 vs 0.9          hit   0 vs 0.9          50       0.906       0.8758                          -0.015          154.5  0.001002
+    forest A: rho 0 vs 0.9 credit_share   0 vs 0.9          50      0.7177       0.6717                        -0.03751             91 4.057e-09
+  forest A: rho 0.5 vs 0.9          hit 0.5 vs 0.9          50      0.8998       0.8758                           -0.02            309   0.01844
+  forest A: rho 0.5 vs 0.9 credit_share 0.5 vs 0.9          50      0.7145       0.6717                        -0.03409             21  7.94e-13
+      lstm A: rho 0 vs 0.5          hit   0 vs 0.5          50       0.938       0.9186                           -0.01            349    0.1339
+      lstm A: rho 0 vs 0.5 credit_share   0 vs 0.5          50      0.8015       0.7696                        -0.03327            368  0.008588
+      lstm A: rho 0 vs 0.9          hit   0 vs 0.9          50       0.938       0.3364                          -0.705              1 8.008e-10
+      lstm A: rho 0 vs 0.9 credit_share   0 vs 0.9          50      0.8015       0.3232                         -0.5117              0 1.776e-15
+    lstm A: rho 0.5 vs 0.9          hit 0.5 vs 0.9          50      0.9186       0.3364                          -0.645              0 7.535e-10
+    lstm A: rho 0.5 vs 0.9 credit_share 0.5 vs 0.9          50      0.7696       0.3232                         -0.4492              0 1.776e-15
+      lstm B: rho 0 vs 0.5          hit   0 vs 0.5          50      0.8528       0.7768                          -0.075             47 4.415e-08
+      lstm B: rho 0 vs 0.5 credit_share   0 vs 0.5          50      0.6909        0.595                        -0.09698             30 3.615e-12
+      lstm B: rho 0 vs 0.9          hit   0 vs 0.9          50      0.8528        0.769                           -0.07             63 1.136e-07
+      lstm B: rho 0 vs 0.9 credit_share   0 vs 0.9          50      0.6909       0.4828                         -0.2051              0 1.776e-15
+    lstm B: rho 0.5 vs 0.9          hit 0.5 vs 0.9          50      0.7768        0.769                            0.02          614.5    0.8242
+    lstm B: rho 0.5 vs 0.9 credit_share 0.5 vs 0.9          50       0.595       0.4828                        -0.07801              2 5.329e-15
+scenario A: forest vs lstm          hit          0          50       0.906        0.938                            0.04            266 0.0005617
+scenario A: forest vs lstm credit_share          0          50      0.7177       0.8015                          0.1107            109 1.908e-08
+scenario A: forest vs lstm          hit        0.5          50      0.8998       0.9186                           0.035          299.5  0.003058
+scenario A: forest vs lstm credit_share        0.5          50      0.7145       0.7696                          0.0831            228 3.634e-05
+scenario A: forest vs lstm          hit        0.9          50      0.8758       0.3364                           -0.63              2 8.496e-10
+scenario A: forest vs lstm credit_share        0.9          50      0.6717       0.3232                         -0.3764              0 1.776e-15
+scenario B: forest vs lstm          hit          0          50       0.906       0.8528                           -0.06            182 3.095e-05
+scenario B: forest vs lstm credit_share          0          50      0.7177       0.6909                         -0.0354            340  0.003544
+scenario B: forest vs lstm          hit        0.5          50      0.8998       0.7768                          -0.115             27 5.702e-09
+scenario B: forest vs lstm credit_share        0.5          50      0.7145        0.595                         -0.1355             47 3.864e-11
+scenario B: forest vs lstm          hit        0.9          50      0.8758        0.769                          -0.105          124.5 7.305e-07
+scenario B: forest vs lstm credit_share        0.9          50      0.6717       0.4828                          -0.195              4 1.243e-14
+     lstm: scenario A vs B          hit          0          50       0.938       0.8528                           -0.09             56 4.787e-08
+     lstm: scenario A vs B credit_share          0          50      0.8015       0.6909                         -0.1182             59 1.617e-10
+     lstm: scenario A vs B          hit        0.5          50      0.9186       0.7768                          -0.165             60 3.858e-08
+     lstm: scenario A vs B credit_share        0.5          50      0.7696        0.595                         -0.1922             54 9.075e-11
+     lstm: scenario A vs B          hit        0.9          50      0.3364        0.769                           0.525           73.5 5.167e-08
+     lstm: scenario A vs B credit_share        0.9          50      0.3232       0.4828                          0.1725             87 2.813e-09
+
+Paired Wilcoxon signed-rank tests, tuned settings, robustness check: 36 comparisons (between rho levels: 18, forest vs LSTM: 12, scenario A vs B: 6); p < 0.05 in 30.
+                            comparison       metric        rho  n_datasets  mean_first  mean_second  median_diff_second_minus_first  wilcoxon_stat   p_value
+          forest_tuned A: rho 0 vs 0.5          hit   0 vs 0.5          50      0.9618       0.9504                               0            243   0.06363
+          forest_tuned A: rho 0 vs 0.5 credit_share   0 vs 0.5          50      0.8003        0.773                        -0.02985            248 9.469e-05
+          forest_tuned A: rho 0 vs 0.9          hit   0 vs 0.9          50      0.9618       0.8882                           -0.05             86 4.096e-07
+          forest_tuned A: rho 0 vs 0.9 credit_share   0 vs 0.9          50      0.8003       0.6492                         -0.1527              0 1.776e-15
+        forest_tuned A: rho 0.5 vs 0.9          hit 0.5 vs 0.9          50      0.9504       0.8882                           -0.04             20 1.905e-08
+        forest_tuned A: rho 0.5 vs 0.9 credit_share 0.5 vs 0.9          50       0.773       0.6492                         -0.1153              0 1.776e-15
+            lstm_tuned A: rho 0 vs 0.5          hit   0 vs 0.5          50      0.9606       0.9444                           -0.01            239   0.02131
+            lstm_tuned A: rho 0 vs 0.5 credit_share   0 vs 0.5          50      0.8415       0.7878                        -0.05544            229 3.818e-05
+            lstm_tuned A: rho 0 vs 0.9          hit   0 vs 0.9          50      0.9606       0.7436                          -0.225           39.5 7.747e-09
+            lstm_tuned A: rho 0 vs 0.9 credit_share   0 vs 0.9          50      0.8415       0.4806                         -0.3775              1 3.553e-15
+          lstm_tuned A: rho 0.5 vs 0.9          hit 0.5 vs 0.9          50      0.9444       0.7436                           -0.18            6.5 1.114e-09
+          lstm_tuned A: rho 0.5 vs 0.9 credit_share 0.5 vs 0.9          50      0.7878       0.4806                         -0.3135              0 1.776e-15
+            lstm_tuned B: rho 0 vs 0.5          hit   0 vs 0.5          50      0.9178       0.8386                          -0.065           16.5 3.007e-09
+            lstm_tuned B: rho 0 vs 0.5 credit_share   0 vs 0.5          50      0.7761       0.6627                         -0.1114             18 4.494e-13
+            lstm_tuned B: rho 0 vs 0.9          hit   0 vs 0.9          50      0.9178       0.8782                           -0.04          200.5 6.975e-05
+            lstm_tuned B: rho 0 vs 0.9 credit_share   0 vs 0.9          50      0.7761       0.6112                         -0.1627              5 1.776e-14
+          lstm_tuned B: rho 0.5 vs 0.9          hit 0.5 vs 0.9          50      0.8386       0.8782                            0.04            180 8.118e-05
+          lstm_tuned B: rho 0.5 vs 0.9 credit_share 0.5 vs 0.9          50      0.6627       0.6112                        -0.05409            182 3.007e-06
+scenario A: forest_tuned vs lstm_tuned          hit          0          50      0.9618       0.9606                            0.01            474     0.467
+scenario A: forest_tuned vs lstm_tuned credit_share          0          50      0.8003       0.8415                         0.05022            202 9.373e-06
+scenario A: forest_tuned vs lstm_tuned          hit        0.5          50      0.9504       0.9444                           -0.01          488.5    0.7432
+scenario A: forest_tuned vs lstm_tuned credit_share        0.5          50       0.773       0.7878                         0.02335            466   0.09909
+scenario A: forest_tuned vs lstm_tuned          hit        0.9          50      0.8882       0.7436                           -0.15             30 4.479e-09
+scenario A: forest_tuned vs lstm_tuned credit_share        0.9          50      0.6492       0.4806                          -0.183              1 3.553e-15
+scenario B: forest_tuned vs lstm_tuned          hit          0          50      0.9618       0.9178                           -0.03            216 0.0002286
+scenario B: forest_tuned vs lstm_tuned credit_share          0          50      0.8003       0.7761                        -0.02926            446   0.06489
+scenario B: forest_tuned vs lstm_tuned          hit        0.5          50      0.9504       0.8386                           -0.12             23 4.413e-09
+scenario B: forest_tuned vs lstm_tuned credit_share        0.5          50       0.773       0.6627                         -0.1013             22 9.521e-13
+scenario B: forest_tuned vs lstm_tuned          hit        0.9          50      0.8882       0.8782                           -0.04          383.5     0.193
+scenario B: forest_tuned vs lstm_tuned credit_share        0.9          50      0.6492       0.6112                        -0.05394            279 0.0003671
+           lstm_tuned: scenario A vs B          hit          0          50      0.9606       0.9178                           -0.04            122 1.326e-05
+           lstm_tuned: scenario A vs B credit_share          0          50      0.8415       0.7761                        -0.07984            177 2.231e-06
+           lstm_tuned: scenario A vs B          hit        0.5          50      0.9444       0.8386                            -0.1             21 3.962e-09
+           lstm_tuned: scenario A vs B credit_share        0.5          50      0.7878       0.6627                         -0.1098             25 1.606e-12
+           lstm_tuned: scenario A vs B          hit        0.9          50      0.7436       0.8782                            0.11           22.5 6.561e-09
+           lstm_tuned: scenario A vs B credit_share        0.9          50      0.4806       0.6112                          0.1333              3 8.882e-15
+
+Run 1 (true survival curve):
+scenario rho  n_patients    hit credit_share lowest_share
+       A   0         500 1.0000  0.999999875  0.999999875
+       A 0.5         500 1.0000  0.999999875  0.999999875
+       A 0.9         500 1.0000  0.999999875  0.999999875
+       B   0         500 1.0000  0.999999914  0.999999914
+       B 0.5         500 1.0000  0.999999914  0.999999914
+       B 0.9         500 1.0000  0.999999914  0.999999914
+
+Seed check, LSTM (fixed settings), scenario A (driver visit_3), rho = 0.9, 10 datasets x 6 models: the visit Run 3 favours changes between seeds in 9 of 10 datasets; two seeds name the same top visit for 0.381 of patients on average; C-index spread within a dataset at most 0.0172; Run 3 favours visit 1 / 2 / 3 in 32 / 0 / 28 of 60 models; Run 2 (Brier) favours the driver in 31; Run 3 and Run 2 (Brier) favour the same visit in 57 of 60.
+
+Seed check, LSTM (fixed settings), scenario B (driver visit_1), rho = 0.9, 10 datasets x 6 models: the visit Run 3 favours changes between seeds in 0 of 10 datasets; two seeds name the same top visit for 0.606 of patients on average; C-index spread within a dataset at most 0.0026; Run 3 favours visit 1 / 2 / 3 in 60 / 0 / 0 of 60 models; Run 2 (Brier) favours the driver in 60; Run 3 and Run 2 (Brier) favour the same visit in 60 of 60.
+
+Seed check, LSTM (tuned settings), scenario A (driver visit_3), rho = 0.9, 10 datasets x 6 models: the visit Run 3 favours changes between seeds in 0 of 10 datasets; two seeds name the same top visit for 0.588 of patients on average; C-index spread within a dataset at most 0.0077; Run 3 favours visit 1 / 2 / 3 in 0 / 0 / 60 of 60 models; Run 2 (Brier) favours the driver in 60; Run 3 and Run 2 (Brier) favour the same visit in 60 of 60.
+
+Seed check, LSTM (tuned settings), scenario B (driver visit_1), rho = 0.9, 10 datasets x 6 models: the visit Run 3 favours changes between seeds in 0 of 10 datasets; two seeds name the same top visit for 0.654 of patients on average; C-index spread within a dataset at most 0.0010; Run 3 favours visit 1 / 2 / 3 in 60 / 0 / 0 of 60 models; Run 2 (Brier) favours the driver in 60; Run 3 and Run 2 (Brier) favour the same visit in 60 of 60.
+
+Training vs held-out patients (50 datasets): censored 0.301 vs 0.300 on average (largest gap within a dataset 0.075); median observed time 4.62 vs 4.63; two-sample KS test p < 0.05 in 3 datasets for the time and 3 for the driver visit (about 2.5 expected by chance).
+
+Worked examples (credits reproduce Table 1; largest relative gap 5.4e-17):
+case                                  label      model scenario   rho  dataset_seed  patient_id settings  model_c_index  credit_visit_1  credit_visit_2  credit_visit_3  driver_share  top_visit
+   A  Typical: forest, first seeded patient     forest        A 0.000             0         493    fixed          0.667           0.553           0.122           2.035         0.751          3
+   B Failure: forest, worst of the 9 misses     forest        A 0.900             0         272    fixed          0.675           1.054           0.269           0.278         0.174          1
+   C        LSTM, fixed settings (main run)       lstm        A 0.900             0         493    fixed          0.676           0.525           0.113           0.381         0.374          1
+   C        LSTM, tuned settings (main run) lstm_tuned        A 0.900             0         493    tuned          0.678           0.310           0.155           0.604         0.565          3

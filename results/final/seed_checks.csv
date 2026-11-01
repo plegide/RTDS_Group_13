@@ -1,0 +1,5 @@
+model,settings,scenario,driver,rho,n_datasets,n_models,datasets_where_run3_favourite_flips,patient_top_visit_agreement,max_c_index_spread,models_run3_favours_visit_1,models_run3_favours_visit_2,models_run3_favours_visit_3,models_run2_brier_favours_driver,models_run3_matches_run2_brier,mean_hit_rate,mean_driver_share
+lstm,fixed,A,3,0.9,10,60,9,0.38059999999999994,0.017162433340355054,32,0,28,31,57,0.37533333333333346,0.34815954313781317
+lstm,fixed,B,1,0.9,10,60,0,0.6063333333333334,0.0026497555351064905,60,0,0,60,60,0.8014999999999998,0.4958628407172089
+lstm,tuned,A,3,0.9,10,60,0,0.5882666666666666,0.007711605584642234,0,0,60,60,60,0.7768333333333334,0.49229428965522276
+lstm,tuned,B,1,0.9,10,60,0,0.6544,0.0010089027351242175,60,0,0,60,60,0.8841666666666667,0.6183330122098081
